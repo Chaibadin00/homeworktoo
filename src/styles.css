@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'CANNET AGENCY';
+    font-family: 'Cyberpunk';
     src: url('./assets/font/Cyberpunk.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'CANNET AGENCY', sans-serif;
+    font-family: 'Cyberpunk', sans-serif;
 }
