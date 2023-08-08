@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-password-page',
@@ -14,6 +15,8 @@ export class PasswordPageComponent {
 
   filledDots = 0;
 
+  constructor(private router: Router) { }
+
   fillDot(number: number): void {
     const dots = document.querySelectorAll('.dot');
     if (this.filledDots < dots.length) {
@@ -22,7 +25,6 @@ export class PasswordPageComponent {
       this.filledDots++;
     }
   }
-
 
   unfilledDot() {
     const dots = document.querySelectorAll('.dot');
@@ -36,6 +38,7 @@ export class PasswordPageComponent {
   checkPasswords() {
     if (this.enteredPassword === this.password) {
       console.log('Password is correct');
+      this.router.navigate(['/main']);
     } else {
       console.log('Password is incorrect');
     }
