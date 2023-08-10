@@ -9,4 +9,24 @@ import { ProductModel } from '../models/product-model';
 })
 export class HomePageComponent {
   products: ProductModel[] = products;
+
+  currentIndex = 0;
+
+  getCurrentProducts(): ProductModel[] {
+    const startIndex = this.currentIndex;
+    const endIndex = (startIndex + 3) % this.products.length;
+    if (startIndex <= endIndex) {
+      return this.products.slice(startIndex, endIndex);
+    } else {
+      return this.products.slice(startIndex).concat(this.products.slice(0, endIndex));
+    }
+  }
+
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.products.length;
+  }
+
+  prevSlide() {
+    this.currentIndex = (this.currentIndex - 1 + this.products.length) % this.products.length;
+  }
 }

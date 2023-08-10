@@ -1,16 +1,42 @@
 <div class="container-fluid text-center">
     <h1 class="fs-2">Our Product_</h1>
 
-    <div class="row row-cols-3 justify-content-md-center">
-        <div class="col col-lg-2" *ngFor="let product of products">
-            <div class="card product-card">
-                <img [src]="product.image" class="card-img-top" [alt]="product.name">
-                <div class="card-body">
-                    <h5 class="card-title">{{ product.name }}</h5>
-                    <p class="card-text">{{ product.description }}</p>
-                    <a href="#" class="btn btn-danger">Learn More</a>
+    <div class="d-flex justify-content-center">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="row justify-content-center">
+                        <ng-container *ngFor="let product of getCurrentProducts(); let i = index">
+                            <div class="col-12 col-md-3">
+                                <div class="carousel-product-wrapper">
+                                    <div class="card product-card">
+                                        <img [src]="product.image" class="card-img-top" [alt]="product.name">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ product.name }}</h5>
+                                            <p class="card-text">{{ product.description }}</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-danger mb-2">Learn More</a>
+                                </div>
+                            </div>
+                        </ng-container>
+                    </div>
+
                 </div>
             </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"
+                (click)="prevSlide()">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
+                (click)="nextSlide()">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 
