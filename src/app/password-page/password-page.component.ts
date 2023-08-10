@@ -12,6 +12,7 @@ export class PasswordPageComponent {
   protected enteredPassword: string = '';
 
   protected correctpassword: boolean = false;
+  isWrong = true;
 
   filledDots = 0;
 
@@ -39,8 +40,10 @@ export class PasswordPageComponent {
     if (this.enteredPassword === this.password) {
       console.log('Password is correct');
       this.router.navigate(['/main']);
+      this.showWrongPasswordMessage(true);
     } else {
       console.log('Password is incorrect');
+      this.showWrongPasswordMessage(false);
     }
     this.clearEnteredPassword();// clear the password after check
   }
@@ -50,5 +53,9 @@ export class PasswordPageComponent {
     this.enteredPassword = '';
     const dots = document.querySelectorAll('.dot');
     dots.forEach(dot => dot.classList.remove('filled'));
+  }
+
+  showWrongPasswordMessage(isWrong: boolean){
+    this.isWrong = isWrong;
   }
 }
