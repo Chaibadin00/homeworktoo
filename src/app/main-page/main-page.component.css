@@ -8,3 +8,10 @@
 .tomorrow-medium {
     font-family: 'Tomorrow-Medium', sans-serif;
 }
+
+.cp-accent-bottom {
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: auto 100%;
+    background-image: url(https://images.secretlab.co/theme/common/cyberpubk-razor-art.svg);
+}

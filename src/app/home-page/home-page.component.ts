@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { products } from '../data/product-data';
+import { ProductModel } from '../models/product-model';
 
 @Component({
   selector: 'app-home-page',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent {
-
+  products: ProductModel[] = products;
 }

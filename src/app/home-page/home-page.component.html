@@ -1,1 +1,17 @@
-<p>home-page works!</p>
+<div class="container-fluid text-center">
+    <h1 class="fs-2">Our Product_</h1>
+
+    <div class="row row-cols-3 justify-content-md-center">
+        <div class="col col-lg-2" *ngFor="let product of products">
+            <div class="card product-card">
+                <img [src]="product.image" class="card-img-top" [alt]="product.name">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.description }}</p>
+                    <a href="#" class="btn btn-danger">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
