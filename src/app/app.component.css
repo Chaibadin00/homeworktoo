@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('../assets/font/Cyberpunk.ttf') format('truetype');
+    /* Adjust the font path */
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Cyberpunk', sans-serif;
+}
