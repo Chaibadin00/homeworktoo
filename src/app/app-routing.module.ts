@@ -13,8 +13,8 @@ const routes: Routes = [
     path: 'main',
     component: MainPageComponent,
     children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomePageComponent },
-      { path: '', redirectTo: 'home', pathMatch: 'full' }, // Default child route
       // Add more child routes as needed
     ]
   },
