@@ -33,6 +33,5 @@
 .carousel:hover .carousel-control-prev,
 .carousel:hover .carousel-control-next {
     width: 2rem;
-    /* Adjust this value as needed */
     opacity: 1;
 }
