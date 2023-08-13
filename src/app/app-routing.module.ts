@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { PasswordPageComponent } from './password-page/password-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ProductPageComponent } from './product-page/product-page.component';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 
 const routes: Routes = [
   {
@@ -15,7 +17,8 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomePageComponent },
-      // Add more child routes as needed
+      { path: 'product', component: ProductPageComponent },
+      { path: 'about', component: AboutUsPageComponent },
     ]
   },
   { path: '', redirectTo: '/password', pathMatch: 'full' }, // Redirect to the main page by default
