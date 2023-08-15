@@ -11,14 +11,14 @@
                         <ng-container *ngFor="let product of getCurrentProducts(); let i = index">
                             <div class="col-12 col-md-3">
                                 <div class="carousel-product-wrapper">
-                                    <div class="card product-card">
+                                    <div class="card product-card border-danger border-2">
                                         <img [src]="product.image" class="card-img-top" [alt]="product.name">
                                         <div class="card-body">
                                             <h5 class="card-title">{{ product.name }}</h5>
                                             <p class="card-text">{{ product.description }}</p>
                                         </div>
+                                        <a href="#" class="btn btn-danger mb-2">Learn More</a>
                                     </div>
-                                    <a href="#" class="btn btn-danger mb-2">Learn More</a>
                                 </div>
                             </div>
                         </ng-container>

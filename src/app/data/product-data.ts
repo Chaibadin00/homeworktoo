@@ -2,6 +2,7 @@ import { ProductModel } from '../models/product-model';
 
 export const products: ProductModel[] = [
     {
+        id: 1,
         image: '../../assets/images/FRONTAL-CORTEX/CAMILLO-RAM-MANAGER.png',
         name: 'CAMILLO RAM MANAGER',
         description: 'Description of Product 1',
@@ -9,6 +10,7 @@ export const products: ProductModel[] = [
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 2,
         image: '../../assets/images/FRONTAL-CORTEX/EX-DISK.png',
         name: 'EX-DISK',
         description: 'Description of Product 2',
@@ -16,6 +18,7 @@ export const products: ProductModel[] = [
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 3,
         image: '../../assets/images/FRONTAL-CORTEX/HEAL-ON-KILL.png',
         name: 'HEAL-ON-KILL',
         description: 'Description of Product 3',
@@ -23,6 +26,7 @@ export const products: ProductModel[] = [
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 4,
         image: '../../assets/images/FRONTAL-CORTEX/LIMBIC-SYSTEM-ENHANCEMENT.png',
         name: 'LIMBIC SYSTEM ENHANCEMENT',
         description: 'Description of Product 4',
@@ -30,6 +34,7 @@ export const products: ProductModel[] = [
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 5,
         image: '../../assets/images/FRONTAL-CORTEX/MECHATRONIC-CORE.png',
         name: 'MECHATRONIC CORE',
         description: 'Description of Product 5',
@@ -37,41 +42,47 @@ export const products: ProductModel[] = [
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 6,
         image: '../../assets/images/FRONTAL-CORTEX/MEMORY-BOOST.png',
         name: 'MEMORY BOOST',
-        description: 'Description of Product 1',
+        description: 'Description of Product 6',
         price: 19.99,
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 7,
         image: '../../assets/images/FRONTAL-CORTEX/RAM-UPGRADE.png',
         name: 'RAM UPGRADE',
-        description: 'Description of Product 2',
+        description: 'Description of Product 7',
         price: 29.99,
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 8,
         image: '../../assets/images/FRONTAL-CORTEX/SELF-ICE.png',
         name: 'SELF ICE',
-        description: 'Description of Product 3',
+        description: 'Description of Product 8',
         price: 14.95,
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 9,
         image: '../../assets/images/FRONTAL-CORTEX/VISUAL-CORTEX-SUPPORT.png',
         name: 'VISUAL CORTEX SUPPORT',
-        description: 'Description of Product 4',
+        description: 'Description of Product 9',
         price: 9.99,
         category: 'FRONTAL CORTEX'
     },
     {
+        id: 10,
         image: '../../assets/images/OCULAR-SYSTEM/KIROSHI OPTICS.png',
         name: 'KIROSHI OPTICS',
-        description: 'Description of Product 4',
+        description: 'Description of Product 10',
         price: 9.99,
         category: 'OCULAR SYSTEM'
     },
     {
+        id: 11,
         image: '../../assets/images/CIRCULATORY-SYSTEM/ADRENALINE-BOOSTER.png',
         name: 'ADRENALINE BOOSTER',
         description: 'Description of Adrenaline Booster',
@@ -79,6 +90,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 12,
         image: '../../assets/images/CIRCULATORY-SYSTEM/BIOCONDUCTOR.png',
         name: 'BIOCONDUCTOR',
         description: 'Description of Bioconductor',
@@ -86,6 +98,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 13,
         image: '../../assets/images/CIRCULATORY-SYSTEM/BIOMONITOR.png',
         name: 'BIOMONITOR',
         description: 'Description of Biomonitor',
@@ -93,6 +106,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 14,
         image: '../../assets/images/CIRCULATORY-SYSTEM/BIOPLASTIC BLOOD VESSELS.png',
         name: 'BIOPLASTIC BLOOD VESSELS',
         description: 'Description of Bioplastic Blood Vessels',
@@ -100,6 +114,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 15,
         image: '../../assets/images/CIRCULATORY-SYSTEM/BLOOD PUMP.png',
         name: 'BLOOD PUMP',
         description: 'Description of Blood Pump',
@@ -107,6 +122,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 16,
         image: '../../assets/images/CIRCULATORY-SYSTEM/FEEDBACK CIRCUIT.png',
         name: 'FEEDBACK CIRCUIT',
         description: 'Description of Feedback Circuit',
@@ -114,6 +130,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 17,
         image: '../../assets/images/CIRCULATORY-SYSTEM/MICROGENERATOR.png',
         name: 'MICROGENERATOR',
         description: 'Description of Microgenerator',
@@ -121,6 +138,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 18,
         image: '../../assets/images/CIRCULATORY-SYSTEM/SECOND HEART.png',
         name: 'SECOND HEART',
         description: 'Description of Second Heart',
@@ -128,6 +146,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 19,
         image: '../../assets/images/CIRCULATORY-SYSTEM/SYN-LUNGS.png',
         name: 'SYN-LUNGS',
         description: 'Description of Syn-Lungs',
@@ -135,6 +154,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 20,
         image: '../../assets/images/CIRCULATORY-SYSTEM/TYROSINE INJECTOR.png',
         name: 'TYROSINE INJECTOR',
         description: 'Description of Tyrosine Injector',
@@ -142,6 +162,7 @@ export const products: ProductModel[] = [
         category: 'CIRCULATORY SYSTEM'
     },
     {
+        id: 21,
         image: '../../assets/images/INTEGUMENTARY-SYSTEM/FIREPROOF COATING.png',
         name: 'FIREPROOF COATING',
         description: 'Description of Fireproof Coating',
@@ -149,6 +170,7 @@ export const products: ProductModel[] = [
         category: 'INTEGUMENTARY SYSTEM'
     },
     {
+        id: 22,
         image: '../../assets/images/INTEGUMENTARY-SYSTEM/GROUNDING PLATING.png',
         name: 'GROUNDING PLATING',
         description: 'Description of Grounding Plating',
@@ -156,6 +178,7 @@ export const products: ProductModel[] = [
         category: 'INTEGUMENTARY SYSTEM'
     },
     {
+        id: 23,
         image: '../../assets/images/INTEGUMENTARY-SYSTEM/HEAT CONVERTER.png',
         name: 'HEAT CONVERTER',
         description: 'Description of Heat Converter',
@@ -163,6 +186,7 @@ export const products: ProductModel[] = [
         category: 'INTEGUMENTARY SYSTEM'
     },
     {
+        id: 24,
         image: '../../assets/images/INTEGUMENTARY-SYSTEM/OPTICAL CAMO.png',
         name: 'OPTICAL CAMO',
         description: 'Description of Optical Camo',
@@ -170,6 +194,7 @@ export const products: ProductModel[] = [
         category: 'INTEGUMENTARY SYSTEM'
     },
     {
+        id: 25,
         image: '../../assets/images/INTEGUMENTARY-SYSTEM/SUBDERMAL ARMOR.png',
         name: 'SUBDERMAL ARMOR',
         description: 'Description of Subdermal Armor',
@@ -177,6 +202,7 @@ export const products: ProductModel[] = [
         category: 'INTEGUMENTARY SYSTEM'
     },
     {
+        id: 26,
         image: '../../assets/images/INTEGUMENTARY-SYSTEM/SUPRA-DERMAL WEAVE.png',
         name: 'SUPRA-DERMAL WEAVE',
         description: 'Description of Supra-Dermal Weave',

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { products } from '../data/product-data';
@@ -12,7 +13,7 @@ export class ProductPageComponent implements OnInit {
   products: ProductModel[] = [];
   allProducts: ProductModel[] = products;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
@@ -23,5 +24,9 @@ export class ProductPageComponent implements OnInit {
         this.products = this.allProducts;
       }
     });
+  }
+
+  viewProductDetail(productId: number) {
+    this.router.navigate(['/main/product', productId]);
   }
 }

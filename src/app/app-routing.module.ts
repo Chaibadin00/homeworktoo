@@ -5,6 +5,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'home', component: HomePageComponent },
       { path: 'product', component: ProductPageComponent },
       { path: 'about', component: AboutUsPageComponent },
+      { path: 'product/:id', component: ProductDetailComponent },
     ]
   },
   { path: '', redirectTo: '/password', pathMatch: 'full' }, // Redirect to the main page by default
