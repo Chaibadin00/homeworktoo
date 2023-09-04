@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PasswordPageComponent } from './password-page/password-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { ProductPageComponent } from './product-page/product-page.component';
-import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HomePageComponent } from './main-page/home-page/home-page.component';
+import { ProductPageComponent } from './main-page/product-page/product-page.component';
+import { AboutUsPageComponent } from './main-page/about-us-page/about-us-page.component';
+import { ProductDetailComponent } from './main-page/product-detail/product-detail.component';
 
 const routes: Routes = [
   {
-    path: 'password',
+    path: 'password',// homework
     component: PasswordPageComponent
   },
   {

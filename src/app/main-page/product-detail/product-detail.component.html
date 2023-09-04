@@ -1,0 +1,30 @@
+<div *ngIf="product" class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img [src]="product.image" class="img-fluid" [alt]="product.name" style="max-width: 80%; height: auto;">
+    </div>
+    <div class="col-md-8 text-center">
+      <h2 class="text-white">{{ product.name }}</h2>
+      <p class="text-white">{{ product.description }}</p>
+      <p class="text-white">Price: ${{ product.price }}</p>
+      
+      <!-- Form for user input -->
+      <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="name" class="form-label text-white">Name</label>
+          <input type="text" class="form-control" id="name" name="userName" placeholder="Enter your name" [(ngModel)]="userName">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label text-white">Email</label>
+          <input type="email" class="form-control" id="email" name="userEmail" placeholder="Enter your email" [(ngModel)]="userEmail">
+        </div>
+        <div class="mb-3">
+          <label for="tel" class="form-label text-white">Telephone</label>
+          <input type="tel" class="form-control" id="tel" name="userTel" placeholder="Enter your telephone number" [(ngModel)]="userTel">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>      
+      
+    </div>
+  </div>
+</div>

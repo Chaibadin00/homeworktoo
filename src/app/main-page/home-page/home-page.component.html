@@ -17,7 +17,8 @@
                                             <h5 class="card-title">{{ product.name }}</h5>
                                             <p class="card-text">{{ product.description }}</p>
                                         </div>
-                                        <a href="#" class="btn btn-danger mb-2">Learn More</a>
+                                        <a [routerLink]="['/main/product', product.id]"
+                                            class="btn btn-danger mb-2">Learn More</a>
                                     </div>
                                 </div>
                             </div>

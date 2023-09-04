@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { products } from '../data/product-data';
-import { ProductModel } from '../models/product-model';
+import { products } from '../../data/product-data';
+import { ProductModel } from '../../models/product-model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -11,6 +12,8 @@ export class HomePageComponent {
   products: ProductModel[] = products;
 
   currentIndex = 0;
+
+  constructor(private router: Router){ }
 
   getCurrentProducts(): ProductModel[] {
     const startIndex = this.currentIndex;
@@ -28,5 +31,9 @@ export class HomePageComponent {
 
   prevSlide() {
     this.currentIndex = (this.currentIndex - 1 + this.products.length) % this.products.length;
+  }
+
+  viewProductDetail(productId: number) {
+    this.router.navigate(['/main/product', productId]);
   }
 }

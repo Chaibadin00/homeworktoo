@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PasswordPageComponent } from './password-page/password-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { ProductPageComponent } from './product-page/product-page.component';
-import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HomePageComponent } from './main-page/home-page/home-page.component';
+import { ProductPageComponent } from './main-page/product-page/product-page.component';
+import { AboutUsPageComponent } from './main-page/about-us-page/about-us-page.component';
+import { ProductDetailComponent } from './main-page/product-detail/product-detail.component';
+import { AdminMainComponent } from './admin-main/admin-main.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     HomePageComponent,
     ProductPageComponent,
     AboutUsPageComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    AdminMainComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
