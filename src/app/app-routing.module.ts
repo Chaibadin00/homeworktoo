@@ -6,6 +6,7 @@ import { HomePageComponent } from './main-page/home-page/home-page.component';
 import { ProductPageComponent } from './main-page/product-page/product-page.component';
 import { AboutUsPageComponent } from './main-page/about-us-page/about-us-page.component';
 import { ProductDetailComponent } from './main-page/product-detail/product-detail.component';
+import { AdminMainComponent } from './admin-main/admin-main.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       { path: 'about', component: AboutUsPageComponent },
       { path: 'product/:id', component: ProductDetailComponent },
     ]
+  },
+  {
+    path: 'admin',
+    component: AdminMainComponent,
   },
   { path: '', redirectTo: '/password', pathMatch: 'full' }, // Redirect to the main page by default
 ];
