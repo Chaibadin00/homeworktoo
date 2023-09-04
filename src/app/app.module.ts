@@ -11,6 +11,8 @@ import { ProductPageComponent } from './main-page/product-page/product-page.comp
 import { AboutUsPageComponent } from './main-page/about-us-page/about-us-page.component';
 import { ProductDetailComponent } from './main-page/product-detail/product-detail.component';
 import { AdminMainComponent } from './admin-main/admin-main.component';
+import { PropertyPageComponent } from './main-page/property-page/property-page.component';
+import { PropertyPageDetailComponent } from './main-page/property-page-detail/property-page-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AdminMainComponent } from './admin-main/admin-main.component';
     ProductPageComponent,
     AboutUsPageComponent,
     ProductDetailComponent,
-    AdminMainComponent
+    AdminMainComponent,
+    PropertyPageComponent,
+    PropertyPageDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,8 @@ import { ProductPageComponent } from './main-page/product-page/product-page.comp
 import { AboutUsPageComponent } from './main-page/about-us-page/about-us-page.component';
 import { ProductDetailComponent } from './main-page/product-detail/product-detail.component';
 import { AdminMainComponent } from './admin-main/admin-main.component';
+import { PropertyPageComponent } from './main-page/property-page/property-page.component';
+import { PropertyPageDetailComponent } from './main-page/property-page-detail/property-page-detail.component';
 
 const routes: Routes = [
   {
@@ -20,8 +22,10 @@ const routes: Routes = [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomePageComponent },
       { path: 'product', component: ProductPageComponent },
-      { path: 'about', component: AboutUsPageComponent },
       { path: 'product/:id', component: ProductDetailComponent },
+      { path: 'property', component: PropertyPageComponent },
+      { path: 'property/:id', component: PropertyPageDetailComponent },
+      { path: 'about', component: AboutUsPageComponent },
     ]
   },
   {
