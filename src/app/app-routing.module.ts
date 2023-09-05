@@ -11,6 +11,12 @@ import { PropertyPageComponent } from './main-page/property-page/property-page.c
 import { PropertyPageDetailComponent } from './main-page/property-page-detail/property-page-detail.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { ProductManageComponent } from './admin-main/product-manage/product-manage.component';
+import { UserManageComponent } from './admin-main/user-manage/user-manage.component';
+import { PropertiesManageComponent } from './admin-main/properties-manage/properties-manage.component';
+import { AdminHomeComponent } from './admin-main/admin-home/admin-home.component';
+import { KeyComponent } from './admin-main/key/key.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 const routes: Routes = [
   {
@@ -39,8 +45,20 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'admin-login',
+    component: AdminLoginComponent,
+  },
+  {
     path: 'admin',
     component: AdminMainComponent,
+    children: [
+      { path: '', redirectTo: 'admin-home', pathMatch: 'full' },
+      { path: 'admin-home', component: AdminHomeComponent},
+      { path: 'product-manage', component: ProductManageComponent},
+      { path: 'user-manage', component: UserManageComponent},
+      { path: 'properties-manage', component: PropertiesManageComponent},
+      { path: 'key', component: KeyComponent}
+    ]
   },
   { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirect to the main page by default
 ];
