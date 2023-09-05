@@ -13,6 +13,8 @@ import { ProductDetailComponent } from './main-page/product-detail/product-detai
 import { AdminMainComponent } from './admin-main/admin-main.component';
 import { PropertyPageComponent } from './main-page/property-page/property-page.component';
 import { PropertyPageDetailComponent } from './main-page/property-page-detail/property-page-detail.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { PropertyPageDetailComponent } from './main-page/property-page-detail/pr
     ProductDetailComponent,
     AdminMainComponent,
     PropertyPageComponent,
-    PropertyPageDetailComponent
+    PropertyPageDetailComponent,
+    LoginPageComponent,
+    RegisterPageComponent
   ],
   imports: [
     BrowserModule,

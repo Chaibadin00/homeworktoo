@@ -9,11 +9,21 @@ import { ProductDetailComponent } from './main-page/product-detail/product-detai
 import { AdminMainComponent } from './admin-main/admin-main.component';
 import { PropertyPageComponent } from './main-page/property-page/property-page.component';
 import { PropertyPageDetailComponent } from './main-page/property-page-detail/property-page-detail.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 const routes: Routes = [
   {
     path: 'password',// homework
     component: PasswordPageComponent
+  },
+  {
+    path: 'login',
+    component: LoginPageComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterPageComponent,
   },
   {
     path: 'main',
@@ -32,7 +42,7 @@ const routes: Routes = [
     path: 'admin',
     component: AdminMainComponent,
   },
-  { path: '', redirectTo: '/main', pathMatch: 'full' }, // Redirect to the main page by default
+  { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirect to the main page by default
 ];
 
 @NgModule({
