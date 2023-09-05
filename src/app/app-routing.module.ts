@@ -32,7 +32,7 @@ const routes: Routes = [
     path: 'admin',
     component: AdminMainComponent,
   },
-  { path: '', redirectTo: '/password', pathMatch: 'full' }, // Redirect to the main page by default
+  { path: '', redirectTo: '/main', pathMatch: 'full' }, // Redirect to the main page by default
 ];
 
 @NgModule({
