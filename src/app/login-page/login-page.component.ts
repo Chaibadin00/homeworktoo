@@ -7,16 +7,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent {
+  email: string = ''
+  password: string = ''
+
   constructor(private router: Router) { }
+
+  
 
   userLogin() {
     // Perform your login logic here.
-
-    // Assuming the login is successful, navigate to the desired page.
+    this.idCheck()
     this.router.navigate(['/main']);
   }
 
   idCheck(){
+    console.log(this.email)
+    console.log(this.password)
     
   }
 }
