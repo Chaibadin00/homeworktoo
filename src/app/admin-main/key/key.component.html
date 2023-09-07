@@ -1,1 +1,22 @@
-<p>key works!</p>
+<div class="container">
+    <h2>User List</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>password</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let admin of admin">
+          <td>{{ admin.id }}</td>
+          <td>{{ admin.password }}</td>
+          <td><button>Delete</button></td>
+          <td><button>Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

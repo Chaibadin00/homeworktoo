@@ -1,1 +1,24 @@
-<p>user-manage works!</p>
+<div class="container">
+    <h2>User List</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td><button>Delete</button></td>
+          <td><button>Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
