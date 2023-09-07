@@ -1,14 +1,17 @@
 <div class="main">
     <div class="position-absolute top-50 start-50 translate-middle">
         <div class="cyberpunk-border">
+            <div class="row text-center" *ngIf="isWrong">
+                <div class="col m-3"><strong class="text-danger">Wr0nG Pa5sw0rd_!!</strong></div>
+            </div>
             <form>
                 <div class="mb-3">
                     <label class="form-label">AdminID</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="adminID" [(ngModel)]="adminID" name="adminID">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password">
                 </div>
                 <button type="button" class="btn-cyber m-2" (click)="CheckID()">
                     <span class="btn__content">Access_</span>
@@ -16,6 +19,8 @@
                     <span class="btn__label">r25</span>
                 </button>
             </form>
+
+
         </div>
     </div>
 </div>
