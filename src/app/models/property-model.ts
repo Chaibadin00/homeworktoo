@@ -5,4 +5,5 @@ export interface PropertyModel{
     owner: string;
     prices: number;
     locations: string;
+    features: string[];
 }
