@@ -1,1 +1,18 @@
-<p>property-page works!</p>
+<div class="container-fluid">
+    <div class="text-center">
+        <h1>Properties List</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-2 mb-4" *ngFor="let property of Properties">
+            <div class="card border-danger border-2">
+                <div class="card-body">
+                    <h5 class="card-title">{{property.name}}</h5>
+                    <p class="card-text">Owner: {{property.owner}}</p>
+                    <p class="card-text">Price: {{property.prices}}</p>
+                    <p class="card-text">locations: {{property.locations}}</p>
+                    <button class="btn btn-danger" (click)="viewPropertyDetail(property.id)">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

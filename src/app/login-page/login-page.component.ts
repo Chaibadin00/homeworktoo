@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { users } from '../data/user-data';
 
 @Component({
   selector: 'app-login-page',
@@ -9,20 +10,23 @@ import { Router } from '@angular/router';
 export class LoginPageComponent {
   email: string = ''
   password: string = ''
+  isWrong: boolean = false;
 
   constructor(private router: Router) { }
 
-  
-
-  userLogin() {
-    // Perform your login logic here.
-    this.idCheck()
-    this.router.navigate(['/main']);
-  }
-
   idCheck(){
-    console.log(this.email)
+    const matchingUsers = users.find(user => user.email == this.email);
+    console.log(matchingUsers)
     console.log(this.password)
-    
+
+    if(matchingUsers){
+      if(matchingUsers.password == this.password){
+        this.router.navigate(['/main']);
+      }else {
+        this.isWrong = true;
+      }
+    } else {
+      alert('User not found');
+    }
   }
 }
