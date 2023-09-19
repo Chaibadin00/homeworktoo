@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { property } from 'src/app/data/property-data';
+import { PropertyModel } from 'src/app/models/property-model';
 
 @Component({
   selector: 'app-properties-manage',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./properties-manage.component.css']
 })
 export class PropertiesManageComponent {
-
+  properties: PropertyModel[] = property;
 }

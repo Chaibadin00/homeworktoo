@@ -17,7 +17,6 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { ProductManageComponent } from './admin-main/product-manage/product-manage.component';
 import { UserManageComponent } from './admin-main/user-manage/user-manage.component';
-import { AdminHomeComponent } from './admin-main/admin-home/admin-home.component';
 import { PropertiesManageComponent } from './admin-main/properties-manage/properties-manage.component';
 import { KeyComponent } from './admin-main/key/key.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
@@ -38,7 +37,6 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     RegisterPageComponent,
     ProductManageComponent,
     UserManageComponent,
-    AdminHomeComponent,
     PropertiesManageComponent,
     KeyComponent,
     AdminLoginComponent

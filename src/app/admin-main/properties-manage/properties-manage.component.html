@@ -1,1 +1,30 @@
-<p>properties-manage works!</p>
+<div class="container">
+    <h2>Products List</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Owner</th>
+          <th>Prices</th>
+          <th>Locations</th>
+          <th>Features</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let property of properties">
+          <td>{{ property.id }}</td>
+          <td>{{ property.name }}</td>
+          <td>{{ property.owner }}</td>
+          <td>{{ property.prices }}</td>
+          <td>{{ property.locations }}</td>
+          <td>{{ property.features }}</td>
+          <td><button>Delete</button></td>
+          <td><button>Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

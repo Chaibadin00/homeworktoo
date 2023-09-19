@@ -9,7 +9,7 @@ import { products } from '../../data/product-data'; // Import your product data
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  productId!: number;
+  productID!: number;
   product: ProductModel | undefined;
 
   userName: string = '';
@@ -22,7 +22,7 @@ export class ProductDetailComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       const idString = params.get('id');
       if (idString) {
-        this.productId = parseInt(idString, 10);
+        this.productID = parseInt(idString, 10);
         this.fetchProductDetails();
       } else {
         console.error('Product ID not provided.');
@@ -31,7 +31,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   fetchProductDetails(): void {
-    this.product = products.find(product => product.id === this.productId);
+    this.product = products.find(product => product.id === this.productID);
     if (!this.product) {
       console.log('Product not found.');
     }

@@ -14,6 +14,6 @@ export class PropertyPageComponent {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   viewPropertyDetail(propertyId: number) {
-    this.router.navigate(['/main/product', propertyId]);
+    this.router.navigate(['/main/property', propertyId]);
   }
 }

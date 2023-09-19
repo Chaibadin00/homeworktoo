@@ -1,1 +1,15 @@
-<p>property-page-detail works!</p>
+<div *ngIf="property" class="container mt-4">
+    <div class="row">
+
+        <div class="col-md-4 text-center position-absolute top-50 start-50 translate-middle">
+            <img [src]="property.images" class="img-fluid" [alt]="property.name">
+            
+            <h2 class="text-white">{{ property.name }}</h2>
+            <p class="text-white">Owner: {{ property.owner }}</p>
+            <p class="text-white">Price: ${{ property.prices }}</p>
+            <p class="text-white">Locations: {{ property.locations }}</p>
+            <p class="text-white">Features: {{ property.features }}</p>
+        </div>
+
+    </div>
+</div>
