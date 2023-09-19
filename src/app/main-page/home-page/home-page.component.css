@@ -39,3 +39,23 @@
     width: 2rem;
     opacity: 1;
 }
+
+.property-card {
+    border: 2px solid #dc3545;
+    border-radius: 10px;
+    margin: 10px 35px;
+    padding: 0px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.property-card img {
+    width: 45%;
+    margin-right: 15px;
+    float: left;
+}
+
+.see-more{
+    margin-right: 30px;
+    float: right;
+}

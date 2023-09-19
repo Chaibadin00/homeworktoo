@@ -1,0 +1,4 @@
+input::placeholder,
+input:not(:placeholder-shown) {
+    font-weight: bold;
+}

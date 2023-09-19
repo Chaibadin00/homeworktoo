@@ -42,3 +42,26 @@
     </div>
 
 </div>
+
+<div class="container-fluid start">
+    <h1 class="fs-2">Our Property_</h1>
+
+    <div class="justify-content-center">
+        <div class="row" *ngFor="let property of property; let i = index">
+            <div class="property-card" *ngIf="i < itemsToShow">
+                <img [src]="property.images" [alt]="property.name">
+                <br>
+                <h1>{{ property.name }}</h1>
+                <br>
+                <h5>Owner: {{ property.owner }}</h5>
+                <h5>Location: {{ property.locations }}</h5>
+                <h5>Price: {{ property.prices }}</h5>
+                <a [routerLink]="['/main/property', property.id]"
+                class="btn btn-danger mb-2">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <button class="see-more btn btn-danger mb-2" (click)="toggleShowMore()">
+        {{ showMore ? 'See Less' : 'See More' }}
+    </button>
+</div>

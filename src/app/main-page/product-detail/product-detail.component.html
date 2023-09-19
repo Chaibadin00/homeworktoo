@@ -9,6 +9,7 @@
       <p class="text-white">Price: ${{ product.price }}</p>
       
       <!-- Form for user input -->
+      <h4>Input form for order</h4>
       <form (ngSubmit)="onSubmit()">
         <div class="mb-3">
           <label for="name" class="form-label text-white">Name</label>
@@ -22,7 +23,7 @@
           <label for="tel" class="form-label text-white">Telephone</label>
           <input type="tel" class="form-control" id="tel" name="userTel" placeholder="Enter your telephone number" [(ngModel)]="userTel">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-outline-danger mb-2">Submit</button>
       </form>      
       
     </div>

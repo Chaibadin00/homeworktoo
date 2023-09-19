@@ -4,12 +4,12 @@
     </div>
     <div class="row">
         <div class="col-md-2 mb-4" *ngFor="let property of Properties">
-            <div class="card border-danger border-2">
+            <div class="card text-center border-danger border-2 start-50">
                 <img [src]="property.images" class="card-img-top" [alt]="property.name">
                 <div class="card-body">
                     <h5 class="card-title">{{property.name}}</h5>
                     <p class="card-text">Owner: {{property.owner}}</p>
-                    <p class="card-text">Price: {{property.prices}}</p>
+                    <p class="card-text">Price: ${{property.prices}}</p>
                     <p class="card-text">locations: {{property.locations}}</p>
                     <button class="btn btn-danger" (click)="viewPropertyDetail(property.id)">View Details</button>
                 </div>

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { products } from '../../data/product-data';
 import { ProductModel } from '../../models/product-model';
 import { Router } from '@angular/router';
+import { PropertyModel } from '../../models/property-model';
+import { property } from '../../data/property-data';
 
 @Component({
   selector: 'app-home-page',
@@ -35,5 +37,15 @@ export class HomePageComponent {
 
   viewProductDetail(productId: number) {
     this.router.navigate(['/main/product', productId]);
+  }
+
+  property: PropertyModel[] = property;
+
+  itemsToShow = 2;
+  showMore = false;
+
+  toggleShowMore() {
+    this.showMore = !this.showMore;
+    this.itemsToShow = this.showMore ? property.length : 2;
   }
 }
