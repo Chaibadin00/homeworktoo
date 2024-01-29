@@ -3,210 +3,50 @@ import { ProductModel } from '../models/product-model';
 export const products: ProductModel[] = [
     {
         id: 1,
-        image: '../../assets/images/FRONTAL-CORTEX/CAMILLO-RAM-MANAGER.png',
-        name: 'CAMILLO RAM MANAGER',
+        image: 'https://www.tesla.com/ownersmanual/images/GUID-B5641257-9E85-404B-9667-4DA5FDF6D2E7-online-en-US.png',
+        name: 'Model 3',
         description: 'Description of Product 1',
         price: 19.99,
         category: 'FRONTAL CORTEX'
     },
     {
         id: 2,
-        image: '../../assets/images/FRONTAL-CORTEX/EX-DISK.png',
-        name: 'EX-DISK',
+        image: 'https://img.icarcdn.com/autospinn/body/000000167497_ace886e6_6684_4d55_b163_34e29d4f8e52.jpg',
+        name: 'Model x',
         description: 'Description of Product 2',
         price: 29.99,
         category: 'FRONTAL CORTEX'
     },
     {
         id: 3,
-        image: '../../assets/images/FRONTAL-CORTEX/HEAL-ON-KILL.png',
-        name: 'HEAL-ON-KILL',
+        image: 'https://www.tesla.com/ownersmanual/images/GUID-1F2D8746-336F-4CF9-9A04-F35E960F31FE-online-en-US.png',
+        name: 'Model Y',
         description: 'Description of Product 3',
         price: 14.95,
         category: 'FRONTAL CORTEX'
     },
     {
         id: 4,
-        image: '../../assets/images/FRONTAL-CORTEX/LIMBIC-SYSTEM-ENHANCEMENT.png',
-        name: 'LIMBIC SYSTEM ENHANCEMENT',
+        image: 'https://www.headlightmag.com/hlmwp/wp-content/uploads/2023/12/Tesla-Cybertruck_official_01.jpg',
+        name: 'Cyber truck',
         description: 'Description of Product 4',
         price: 9.99,
         category: 'FRONTAL CORTEX'
     },
     {
         id: 5,
-        image: '../../assets/images/FRONTAL-CORTEX/MECHATRONIC-CORE.png',
-        name: 'MECHATRONIC CORE',
+        image: 'https://static01.nyt.com/images/2023/06/08/multimedia/08gm-tesla-qjgv/08gm-tesla-qjgv-videoSixteenByNine3000.jpg',
+        name: 'Tesla charger',
         description: 'Description of Product 5',
         price: 39.99,
         category: 'FRONTAL CORTEX'
     },
     {
         id: 6,
-        image: '../../assets/images/FRONTAL-CORTEX/MEMORY-BOOST.png',
-        name: 'MEMORY BOOST',
+        image: 'https://www.tesla.com/sites/default/files/powerwall/hero/D_PW_Hero_2880x1800.jpg',
+        name: 'Power wall',
         description: 'Description of Product 6',
         price: 19.99,
         category: 'FRONTAL CORTEX'
-    },
-    {
-        id: 7,
-        image: '../../assets/images/FRONTAL-CORTEX/RAM-UPGRADE.png',
-        name: 'RAM UPGRADE',
-        description: 'Description of Product 7',
-        price: 29.99,
-        category: 'FRONTAL CORTEX'
-    },
-    {
-        id: 8,
-        image: '../../assets/images/FRONTAL-CORTEX/SELF-ICE.png',
-        name: 'SELF ICE',
-        description: 'Description of Product 8',
-        price: 14.95,
-        category: 'FRONTAL CORTEX'
-    },
-    {
-        id: 9,
-        image: '../../assets/images/FRONTAL-CORTEX/VISUAL-CORTEX-SUPPORT.png',
-        name: 'VISUAL CORTEX SUPPORT',
-        description: 'Description of Product 9',
-        price: 9.99,
-        category: 'FRONTAL CORTEX'
-    },
-    {
-        id: 10,
-        image: '../../assets/images/OCULAR-SYSTEM/KIROSHI OPTICS.png',
-        name: 'KIROSHI OPTICS',
-        description: 'Description of Product 10',
-        price: 9.99,
-        category: 'OCULAR SYSTEM'
-    },
-    {
-        id: 11,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/ADRENALINE-BOOSTER.png',
-        name: 'ADRENALINE BOOSTER',
-        description: 'Description of Adrenaline Booster',
-        price: 12.99,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 12,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/BIOCONDUCTOR.png',
-        name: 'BIOCONDUCTOR',
-        description: 'Description of Bioconductor',
-        price: 24.99,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 13,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/BIOMONITOR.png',
-        name: 'BIOMONITOR',
-        description: 'Description of Biomonitor',
-        price: 18.95,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 14,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/BIOPLASTIC BLOOD VESSELS.png',
-        name: 'BIOPLASTIC BLOOD VESSELS',
-        description: 'Description of Bioplastic Blood Vessels',
-        price: 16.99,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 15,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/BLOOD PUMP.png',
-        name: 'BLOOD PUMP',
-        description: 'Description of Blood Pump',
-        price: 28.99,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 16,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/FEEDBACK CIRCUIT.png',
-        name: 'FEEDBACK CIRCUIT',
-        description: 'Description of Feedback Circuit',
-        price: 22.95,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 17,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/MICROGENERATOR.png',
-        name: 'MICROGENERATOR',
-        description: 'Description of Microgenerator',
-        price: 14.99,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 18,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/SECOND HEART.png',
-        name: 'SECOND HEART',
-        description: 'Description of Second Heart',
-        price: 32.99,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 19,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/SYN-LUNGS.png',
-        name: 'SYN-LUNGS',
-        description: 'Description of Syn-Lungs',
-        price: 26.95,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 20,
-        image: '../../assets/images/CIRCULATORY-SYSTEM/TYROSINE INJECTOR.png',
-        name: 'TYROSINE INJECTOR',
-        description: 'Description of Tyrosine Injector',
-        price: 10.99,
-        category: 'CIRCULATORY SYSTEM'
-    },
-    {
-        id: 21,
-        image: '../../assets/images/INTEGUMENTARY-SYSTEM/FIREPROOF COATING.png',
-        name: 'FIREPROOF COATING',
-        description: 'Description of Fireproof Coating',
-        price: 15.99,
-        category: 'INTEGUMENTARY SYSTEM'
-    },
-    {
-        id: 22,
-        image: '../../assets/images/INTEGUMENTARY-SYSTEM/GROUNDING PLATING.png',
-        name: 'GROUNDING PLATING',
-        description: 'Description of Grounding Plating',
-        price: 19.99,
-        category: 'INTEGUMENTARY SYSTEM'
-    },
-    {
-        id: 23,
-        image: '../../assets/images/INTEGUMENTARY-SYSTEM/HEAT CONVERTER.png',
-        name: 'HEAT CONVERTER',
-        description: 'Description of Heat Converter',
-        price: 12.95,
-        category: 'INTEGUMENTARY SYSTEM'
-    },
-    {
-        id: 24,
-        image: '../../assets/images/INTEGUMENTARY-SYSTEM/OPTICAL CAMO.png',
-        name: 'OPTICAL CAMO',
-        description: 'Description of Optical Camo',
-        price: 28.99,
-        category: 'INTEGUMENTARY SYSTEM'
-    },
-    {
-        id: 25,
-        image: '../../assets/images/INTEGUMENTARY-SYSTEM/SUBDERMAL ARMOR.png',
-        name: 'SUBDERMAL ARMOR',
-        description: 'Description of Subdermal Armor',
-        price: 24.99,
-        category: 'INTEGUMENTARY SYSTEM'
-    },
-    {
-        id: 26,
-        image: '../../assets/images/INTEGUMENTARY-SYSTEM/SUPRA-DERMAL WEAVE.png',
-        name: 'SUPRA-DERMAL WEAVE',
-        description: 'Description of Supra-Dermal Weave',
-        price: 32.95,
-        category: 'INTEGUMENTARY SYSTEM'
-    },
+    }
 ];

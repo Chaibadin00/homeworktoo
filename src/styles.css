@@ -1,13 +1,4 @@
-@font-face {
-    font-family: 'Tomorrow-Thin';
-    src: url('./assets/font/Tomorrow-Thin.ttf') format('truetype');
-    /* Adjust the font path */
-    font-weight: normal;
-    font-style: normal;
-}
-
 body{
-    font-family: 'Tomorrow-Thin', sans-serif;
     background: #000;
     color: white;
 }

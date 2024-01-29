@@ -4,7 +4,7 @@ export const property: PropertyModel[] = [
     {
         id: 1,
         name: "Northside Apartment",
-        images:"../../assets/images/property/Northside_Apartment_Infobox_CP2077.jpg",
+        images:"https://assets-global.website-files.com/6281a4ed9e3e11df971041a5/6281a4ed9e3e11cbc310436f_Apartment%20EV%20charger.jpg",
         owner: "None",
         prices: 5000,
         locations: "Sunset Motel, Northside, Watson",
@@ -22,7 +22,7 @@ export const property: PropertyModel[] = [
     {
         id: 2,
         name: "V's Apartment",
-        images:"../../assets/images/property/V's_Apartment.jpg",
+        images:"https://jetcharge.com.au/wp-content/uploads/2021/12/AdobeStock_382354542-scaled.jpeg",
         owner: "V",
         prices: 2000,
         locations: "Megabuilding H10, Little China, Watson",

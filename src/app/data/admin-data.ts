@@ -3,7 +3,7 @@ import { AdminModel } from "../models/admin-model"
 export const admin : AdminModel[] = [
     {
       "id": 1,
-      "password": "password123"
+      "password": "123"
     },
     {
       "id": 2,
